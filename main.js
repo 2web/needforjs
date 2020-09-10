@@ -16,13 +16,13 @@ const keys = {
     ArrowDown: false,
     ArrowRight: false,
     ArrowLeft: false
-}
+};
 
 const setting = {
     start: false,
     score: 0,
     speed: 3
-}
+};
 
 function startGame() {
     start.classList.add('hide');
@@ -33,8 +33,9 @@ function startGame() {
 
 function playGame() {
     console.log("Play Game");
-    if (setting.start)
+    if (setting.start) {
         requestAnimationFrame(playGame);
+    }
 }
 
 function startRun(event) {
